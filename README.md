@@ -48,7 +48,7 @@ Open [http://localhost:15672](http://localhost:15672) and login with `guest`/`gu
   - `github.com/streadway/amqp`
 
 ## Source Code
-- [go/consumer.go](go/consumer.go)
+- [go/consumer.go](go/consumer.go)  see [https://github.com/streadway/amqp](https://github.com/streadway/amqp)
 
 
 ## Qt 5 / C++14
