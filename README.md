@@ -33,7 +33,7 @@ Open [http://localhost:15672](http://localhost:15672) and login with `guest`/`gu
 ### Information
 - tested with Python 3.6
 - requires the following modules (use `pip install -r requirements.txt`)
--- `pika` `>=1.0.1`
+  - `pika` `>=1.0.1`
 
 ### Source Code
 - [python/producer.py](python/producer.py)
@@ -45,28 +45,28 @@ Open [http://localhost:15672](http://localhost:15672) and login with `guest`/`gu
 ### Information
 - tested with Go 1.12.5
 - requires the following module (get it with `go get <dep>`)
--- `github.com/streadway/amqp`
+  - `github.com/streadway/amqp`
 
 ## Source Code
 - [go/consumer.go](go/consumer.go)
 
 
-## Qt / C++14
+## Qt 5 / C++14
 ### Information
 - tested on Windows 10 x64, WSL, macOS 10.14.5
 - compiled with
--- Microsoft Visual Studio 2017 Win64, Windows 10 Enterprise N 2016 LTSB (OS Build 1493.2999)
--- gcc 6.3.0-18 and clang 8.0.0 on WSL (Debian GNU/Linux 9.9)
--- gcc on macOS
+  - Microsoft Visual Studio 2017 Win64, Windows 10 Enterprise N 2016 LTSB (OS Build 1493.2999)
+  - gcc 6.3.0-18 and clang 8.0.0 on WSL (Debian GNU/Linux 9.9)
+  - gcc on macOS
 
 - requires the following dependencies
--- CMake >= 3.11
--- Qt 5  >= 5.7.1
+  - CMake >= 3.11
+  - Qt 5  >= 5.7.1
 
 - uses the very nice AMQP 0.9.1 implementation from [https://github.com/mbroadst/qamqp](https://github.com/mbroadst/qamqp)
--- uses revision [b5c660a](https://github.com/mbroadst/qamqp/commit/b5c660a1ac10ac5bbb8f770318d0eb69b484de93)
--- wrapped in CMake
--- patched `QString QAmqpClient::gitVersion()` in `qamqpclient.cpp` to always return `b5c660a`
+  - uses revision [b5c660a](https://github.com/mbroadst/qamqp/commit/b5c660a1ac10ac5bbb8f770318d0eb69b484de93)
+  - wrapped in CMake
+  - patched `QString QAmqpClient::gitVersion()` in `qamqpclient.cpp` to always return `b5c660a`
 
 ### Source Code
 - [qt/CMakeLists.txt](qt/CMakeLists.txt)
