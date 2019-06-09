@@ -40,3 +40,13 @@ Open [http://localhost:15672](http://localhost:15672) and login with `guest`/`gu
 - [python/consumer.py](python/consumer.py)
 - [python/amqp/__init__.py](python/amqp/__init__.py) 
 
+
+## Golang
+### Information
+- tested with Go 1.12.5
+- requires the following module (get it with `go get <dep>`)
+-- `github.com/streadway/amqp`
+
+## Source Code
+- [go/consumer.go](go/consumer.go)
+
