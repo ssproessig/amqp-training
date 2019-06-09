@@ -29,3 +29,14 @@ amqp://guest:guest@localhost:5672/
 Open [http://localhost:15672](http://localhost:15672) and login with `guest`/`guest` to watch the exchange and queues.
 
 
+## Python
+### Information
+- tested with Python 3.6
+- requires the following modules (use `pip install -r requirements.txt`)
+-- `pika` `>=1.0.1`
+
+### Source Code
+- [python/producer.py](python/producer.py)
+- [python/consumer.py](python/consumer.py)
+- [python/amqp/__init__.py](python/amqp/__init__.py) 
+
