@@ -51,6 +51,22 @@ Open [http://localhost:15672](http://localhost:15672) and login with `guest`/`gu
 - [go/consumer.go](go/consumer.go)  see [https://github.com/streadway/amqp](https://github.com/streadway/amqp)
 
 
+## Spring Boot 2
+### Information
+- tested with Spring Boot 2.1.5, Maven 3.6 and JDK 1.8.202
+
+## Source Code
+- [spring-boot/pom.xml](spring-boot/pom.xml)
+
+### ...configurable AMQP parameters (queue name, binding key)
+- [spring-boot/.../application.yml](spring-boot/src/main/resources/application.yml)
+- [spring-boot/.../RabbitConfiguration.java](spring-boot/src/main/java/com/github/ssproessig/amqptraining/springbootconsumer/RabbitConfiguration.java)
+- [spring-boot/.../SpringBootConsumerApplication.java](spring-boot/src/main/java/com/github/ssproessig/amqptraining/springbootconsumer/SpringBootConsumerApplication.java)
+
+### ...simple hard-coded @RabbitListener
+- [spring-boot/.../SpringBootConsumerApplication.java @ 84f3187](https://github.com/ssproessig/amqp-training/blob/84f318740dd15aa906fedcf786c7a3d7dcf053f4/spring-boot/src/main/java/com/github/ssproessig/amqptraining/springbootconsumer/SpringBootConsumerApplication.java#L23)
+
+
 ## Qt 5 / C++14
 ### Information
 - tested on Windows 10 x64, WSL, macOS 10.14.5
